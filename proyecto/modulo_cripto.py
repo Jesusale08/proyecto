@@ -1,6 +1,6 @@
 def cifrar_cesar(mensaje, clave_cifrado):
     if not isinstance(mensaje, str) or not isinstance(clave_cifrado, int):
-        raise ValueError("El mensaje debe ser una cadena y la clave de cifrado un entero.")
+        raise typeError("El mensaje debe ser una cadena y la clave de cifrado un entero.")
 
     abc = "abcdefghijklmnopqrstuvwxyz"
     clave_cifrado = clave_cifrado % len(abc)
@@ -23,7 +23,7 @@ def cifrar_cesar(mensaje, clave_cifrado):
 
 def descifrar_cesar(mensaje, clave_cifrado):
     if not isinstance(mensaje, str) or not isinstance(clave_cifrado, int):
-        raise ValueError("El mensaje debe ser una cadena y la clave de cifrado un entero.")
+        raise typeError("El mensaje debe ser una cadena y la clave de cifrado un entero.")
 
     abc = "abcdefghijklmnopqrstuvwxyz"
     clave_cifrado = clave_cifrado % len(abc)
